@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CSS Website</title>
+
+    <!--VIDEO:15,16,17-->
+
+    <!--Internal CSS-->
+
+    <style> /*use css coding within here.*/
+
+/*1.  Element selector*/
+        div {               
+            color: red; /*div: selector*/
+            background-color: yellow; /* color: declaration*/
+        }
+
+/*2.  Class selector*/
+
+        .viola{
+            background-color: violet;
+        }
+
+/*3.  ID selector*/
+
+        #grana{
+            color: green;
+        }
+
+/*4.  Child selector*/
+
+        main > p{
+            color: greenyellow;
+        }
+
+/*5.  Descendant Selector*/
+
+        span p{
+            color: blueviolet;
+        }
+
+/*6.  Universal Selector*/
+
+        *{
+            margin: 5px;
+            padding: 0px;
+            border: 6px blue;
+        }
+
+/*7.  Pseudo Selectors*/
+
+        a:link{
+            color: tomato;
+        }
+
+        a:visited{
+            color:violet
+        }
+
+        a:active{
+            color: chartreuse;
+        }
+
+        /*a:hover{
+            color: black;
+        }*/
+
+/*VIDEO:19*/
+
+/*Fonts*/
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-size: 50px;
+        }
+
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px; 
+            font-style:italic;
+            font-weight: 500;
+            
+        }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: blue;
+            text-decoration-style: dotted;
+        }
+
+        .box{
+            border: 2px solid red;
+            width: 500px;
+            height: 500px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        
+
+    </style>
+
+    <link rel="stylesheet" href="style2.css"> <!--External CSS-->
+
+</head>
+<body>
+    <div>
+        Today I begin CSS.
+    </div>
+
+    <h1 style="color: yellow; background-color: red;">About Me</h1> <!--Inline CSS-->
+
+    <p><i>ECE BTech in GNIT</i></p>
+
+    <div class="viola" id="grana">i want BG colour to be violet</div>
+
+    <p> </p>
+
+    <main>
+        this is a main.
+
+        <p>this is a para inside a main.</p> <!--child selector affects this para-->
+
+        <article>
+            <p>this para is inside an article within the main.</p><!--but doesn't affect this one-->
+        </article>
+    </main>
+
+    <span>
+        <p>directly inside</p> <!--affects this-->
+
+        <article>
+            <p>within an &lt;article&gt; tag</p> <!--and also this-->
+        </article>
+    </span>
+
+    <h2>links</h2>
+
+    <p>
+        <a href="https://www.linkedin.com">Linkedin</a>
+        <a href="https://www.instagram.com">Instagram</a>
+    </p>
+
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, quibusdam ipsum nesciunt dolorum eaque, ducimus laudantium mollitia odit voluptate perferendis aut maiores dicta possimus iure amet illo nostrum deserunt. Amet totam obcaecati debitis consequuntur, id dolores minima iusto sunt quo dolorem soluta nesciunt? Explicabo saepe totam atque officiis officia repellat.</div>
+
+</body>
+</html>
